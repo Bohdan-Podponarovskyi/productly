@@ -41,6 +41,37 @@ a {
     color: #544837;
 }
 
+/* Icons */
+
+.icon {
+    /*display: inline-block;*/
+    width: 50px;
+    height: 50px;
+    border-radius: 15px;
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'FontAwesome', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 50px;
+}
+
+.icon_purple {
+    background-color: #7752BE;
+}
+
+.icon_orange {
+    background: #FAB005;
+}
+
+.icon_red {
+    background: #F03E3D;
+}
+
+.icon_blue {
+    background: #4DADF7;
+}
+
 /* Buttons */
 
 .button {
@@ -127,10 +158,33 @@ a {
 /* Features */
 
 .features {
-    background: linear-gradient(179.59deg, rgba(255, 229, 210, 0.629261) 0.35%, rgba(255, 244, 229, 0.0001) 99.63%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .features__title {
     max-width: 540px;
     text-align: center;
+    margin: 100px 0 50px;
+}
+
+.features__list {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 45px;
+    margin-bottom: 70px;
+}
+
+.features__item-title {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+    margin: 30px 0 15px;
+}
+
+.features__list-item {
+    max-width: 270px;
+    width: 100%;
 }
