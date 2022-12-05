@@ -1,7 +1,30 @@
+@font-face {
+    font-family: 'gothammedium';
+    src: url('../font/gothammedium-webfont.woff2') format('woff2'),
+    url('../font/gothammedium-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    height: 100%;
+}
+
 body {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     font-style: normal;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100%;
+}
+
+.main {
+    flex: 2;
+    width: 100%;
+    border-bottom: 1px solid rgba(188, 208, 229, 0.496913);
 }
 
 a {
@@ -11,7 +34,6 @@ a {
 .content-wrapper {
     max-width: 1200px;
     width: 100%;
-    margin: 0 auto;
 }
 
 .text-wrapper {
@@ -44,7 +66,6 @@ a {
 /* Icons */
 
 .icon {
-    /*display: inline-block;*/
     width: 50px;
     height: 50px;
     border-radius: 15px;
@@ -141,7 +162,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: 70px;
+    margin: 70px auto 0;
 }
 
 .first-screen__title {
@@ -161,6 +182,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 70px;
 }
 
 .features__title {
@@ -187,4 +209,61 @@ a {
 .features__list-item {
     max-width: 270px;
     width: 100%;
+}
+
+/* Footer */
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 70px 0;
+    max-height: 350px;
+}
+
+.footer-nav__title {
+    font-family: 'gothammedium', sans-serif;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+.footer-nav {
+    min-width: 135px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.footer-nav__link:first-of-type {
+    margin-top: 15px;
+}
+
+.footer-nav__link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    color: #544837;
+}
+
+.sign-up-form {
+    max-width: 340px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 25px;
+}
+
+.sign-up-form__input {
+    border: 1px solid #BCD0E5;
+    border-radius: 4px;
+    width: 100%;
+    min-height: 50px;
+}
+
+.sign-up-form__input::placeholder {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: #BCD0E5;
 }
